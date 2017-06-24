@@ -1,0 +1,62 @@
+@import url(public.css);
+.top_ad {
+  background: #f8f8f8;
+  height: 63px;
+  position: relative; }
+  .top_ad img {
+    width: 100%; }
+  .top_ad span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    line-height: 20px;
+    text-align: center;
+    top: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.2); }
+
+.banner {
+  height: 460px;
+  position: relative; }
+  .banner img {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%; }
+  .banner .dots {
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .banner .dots li {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      background: #666;
+      float: left;
+      margin: 0 5px; }
+    .banner .dots li.active {
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(0, 0, 0, 0.5);
+      background: rgba(255, 255, 255, 0.5); }
+
+.hotTitle {
+  font-size: 20px;
+  padding-top: 50px;
+  border-bottom: 2px solid #ff3f38; }
+  .hotTitle a {
+    color: #fff;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 30px;
+    display: block;
+    background: #ff3f38;
+    width: 260px; }
+
+.main {
+  background: #f5f5f5; }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录-奥买家</title>
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css">
+	<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/login.js"></script>
+</head>
+<body>
+	<div class="header layout clearfix">
+		<div class="header_left">
+			<a href="../index.html"><img src="../imgs/log_reg/logo-login.png" alt="logo"></a>
+			<span>欢迎登录</span>
+		</div>
+		<div class="header_rgt">
+			<span>没有账号？</span><a href="register.html">立即注册</a> 
+			<a target="_blank" href="javascript:;">帮助中心</a>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="layout">
+			<div class="loginBox">
+				<ul class="login_top">
+					<li><span>账号登录</span></li> 
+					<li><span>手机动态码登录</span></li>
+					<li class="slide_line"></li>
+				</ul>
+				<div class="container">
+					<ul class="loginlist">
+						<li class="userLogin">
+							<form  method="get">
+								<p class="userId"><i class="iconfont">&#xe6a3;</i>
+									<input type="text" name="inpt" placeholder="手机号/邮箱">
+									<span class="error_info"><i class="iconfont">&#xe6f2;</i><em>错误的信息</em></span>
+								</p>
+								<p class="pwd"><i class="iconfont">&#xe664;</i>
+									<input type="password" name="inpt" placeholder="登录密码">
+									<span class="error_info"><i class="iconfont">&#xe6f2;</i><em></em></span>
+								</p>								
+								<h3><input type="checkbox" name="">2周内自动登录 <a href="javascript:;">忘记密码？ </a></h3>
+								<input type="submit" name="" value="登录">
+							</form>
+						</li>
+						<li class="phoneLogin">
+							<form action="" method="get">
+								<p class="userId"><i class="iconfont">&#xe6a3;</i>
+									<input type="text" name="inpt" placeholder="请输入手机号">
+									<span class="error_info"><i class="iconfont">&#xe6f2;</i><em></em></span>
+								</p>
+								<p class="check_code"><i class="iconfont">&#xe65d;</i>
+									<input type="text" name="inpt" placeholder="短信动态验证码">
+									<input type="button" name="" value="获取短信验证码">
+									<span class="error_info"><i class="iconfont">&#xe6f2;</i><em></em></span>
+								</p>								
+								<input type="submit" name="" value="登录">
+								<p>注意：未注册过奥买家的手机号在首次登录时将自动完成注册，使用该登录方式代表您已接受 <a href="javascript;:">《会员注册协议》</a></p>
+							</form>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="otherLogin">
+					<p>直接使用以下账号登录</p>
+					<ul class="loginStyles">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p>
+			<a href="javascript:;">关于奥买家</a> | 
+			<a href="javascript:;">诚聘英才</a> | 
+			<a href="javascript:;">联系我们</a>
+		</p>
+		<p>粤ICP备15091122号-1|Copyright&copy; 奥买家 2013-2016，All Rights Reserved</p>
+	</div>
+</body>
+</html>
