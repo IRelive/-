@@ -14,9 +14,7 @@ $(function(){
 	//关闭顶部广告
 	$('.close_ad').click(function(){
 		$(".top_ad").remove();
-	})
-
-	
+	})	
 	//处理获取的数据
 	function handlerData(){
 		$.getJSON("data/index.json")
@@ -25,6 +23,10 @@ $(function(){
 			loadGoodsClassify(res.goodsClassify);
 			//动态创建轮播图
 			loadBanner(res.bannerSrc);
+			//动态加载hot必买爆品
+			loadHotBuy(res.hotBuyProduct);
+			//加载全球商品商标
+			loadGlobalBrands(res.globalBrands);
 		},function(){
 			console.log("数据加载失败");
 		});
@@ -48,7 +50,7 @@ $(function(){
 			}
 			bannerChange(curIndex);
 		}
-		autoTimer = setInterval(timerFn,3000);
+		autoTimer = setInterval(timerFn,5000);
 		//移入小圆点切换到对应的banner图片
 		$('.dots li').mouseover(function(){
 			curIndex = $(this).index();
@@ -58,13 +60,26 @@ $(function(){
 		$('.banner').hover(function(){
 			clearInterval(autoTimer);
 		},function(){
-			autoTimer = setInterval(timerFn,3000);
+			autoTimer = setInterval(timerFn,5000);
 		});
 	}
 	//banner图片改变时切换效果
 	function bannerChange(index){
 		$('.banner img').eq(index).fadeIn().parent().siblings().find("img").fadeOut();
 		$('.banner .dots li').eq(index).addClass('active').siblings('li').removeClass();
+	}
+	//加载全球品牌商标
+	function loadGlobalBrands(res){
+		$.each(res,function(i,val){
+			$.each(val,function(subI,subVal){
+				$('.country_brands ul').eq(i)
+				.append('<li><a href="javascript:;"><img src="'+subVal+'" alt=""></a></li>');
+			})
+		})
+		$('.countrys li').mouseover(function(){
+			$(this).addClass('active').siblings().removeClass();
+			$('.country_brands ul').eq($(this).index()).show().siblings().hide();
+		})
 	}
 	//动态创建商品分类
 	function loadGoodsClassify(res){
@@ -85,6 +100,22 @@ $(function(){
 			index ++;
 		})
 		goodsTab();
+	}
+	//动态加载hot必买爆品
+	function loadHotBuy(res){
+		$.each(res.products,function(i,val){
+			$('.hot_products').append(`<dl>
+						<dt><img src="${val.productImg}" alt=""></dt>
+						<dd>
+							<h2><img src="${val.countryImg}" alt="">${val.country}</h2>
+							<h3><a href="javascript:;" title="">${val.title}</a></h3>
+							<p class="detail">${val.detail}</p>
+							<p class="sale"><span>已售<b>${val.sale}</b>件</span><i></i></p>
+							<p class="bottom"><i>￥<b>${val.curPrice}</b></i><em>￥<b>${val.oriPrice}</b></em><a href="javascript:;" title="">马上抢</a></p>
+						</dd>
+					</dl>`);
+		})
+		$('.hot_products').append('<a class="hot_ad"><img src="'+res.hot_ad+'" /></a>');
 	}
 	//商品分类tab切换
 	function goodsTab(){

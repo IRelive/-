@@ -60,3 +60,221 @@
 
 .main {
   background: #f5f5f5; }
+
+.hot_products {
+  padding: 12px 0; }
+  .hot_products .hot_ad {
+    display: block; }
+    .hot_products .hot_ad img {
+      width: 100%; }
+
+.hot_products dl {
+  background: #fff;
+  width: 582px;
+  height: 234px;
+  padding: 6px;
+  float: left;
+  margin-bottom: 12px; }
+  .hot_products dl:hover dt img {
+    transform: scale(1.1); }
+  .hot_products dl:nth-child(2n+1) {
+    margin-right: 12px; }
+  .hot_products dl dt {
+    float: left;
+    overflow: hidden; }
+    .hot_products dl dt img {
+      width: 234px;
+      transition: all .5s; }
+  .hot_products dl dd {
+    float: left;
+    width: 306px;
+    padding-left: 24px; }
+    .hot_products dl dd h2 {
+      color: #7c7c7c;
+      height: 26px;
+      line-height: 26px;
+      font-size: 12px;
+      padding: 12px 0 6px;
+      font-weight: normal; }
+      .hot_products dl dd h2 img {
+        width: 26px;
+        margin-right: 10px;
+        float: left; }
+    .hot_products dl dd h3 {
+      border-bottom: 1px dotted #ddd;
+      white-space: nowrap;
+      line-height: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      .hot_products dl dd h3 a {
+        color: #1a1818;
+        font-weight: normal; }
+        .hot_products dl dd h3 a:hover {
+          color: #ff442a; }
+    .hot_products dl dd .detail {
+      color: #999;
+      line-height: 18px;
+      height: 75px;
+      margin-top: 5px;
+      overflow: hidden; }
+    .hot_products dl dd .sale {
+      overflow: hidden;
+      color: #fff;
+      margin-bottom: 20px; }
+      .hot_products dl dd .sale span {
+        float: left;
+        height: 22px;
+        line-height: 22px;
+        background: #ff442a;
+        padding: 0 10px;
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px; }
+        .hot_products dl dd .sale span b {
+          padding: 0 5px; }
+      .hot_products dl dd .sale i {
+        float: left;
+        border: 11px solid #ff442a;
+        border-color: transparent transparent transparent #ff442a; }
+    .hot_products dl dd .bottom {
+      height: 40px; }
+      .hot_products dl dd .bottom i {
+        color: #ff442a;
+        font-size: 16px;
+        font-weight: bold; }
+        .hot_products dl dd .bottom i b {
+          font-size: 22px;
+          font-weight: 400; }
+      .hot_products dl dd .bottom em {
+        color: #999;
+        font-size: 13px;
+        line-height: 20px;
+        padding-left: 12px;
+        text-decoration: line-through; }
+        .hot_products dl dd .bottom em b {
+          font-weight: normal; }
+      .hot_products dl dd .bottom a {
+        float: right;
+        width: 83px;
+        color: #ff442a;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        border: 1px solid #ff442a;
+        border-radius: 3px;
+        font-size: 14px; }
+        .hot_products dl dd .bottom a:hover {
+          font-weight: bold; }
+
+.globalBrand .content .brand_ad {
+  float: left; }
+  .globalBrand .content .brand_ad img {
+    width: 714px;
+    height: 178px;
+    margin-top: 10px;
+    border: 1px solid #ddd; }
+
+.globalBrand .content .brands {
+  float: right;
+  margin-top: 10px;
+  background: #fff;
+  padding: 20px 0 0 20px;
+  width: 436px;
+  height: 730px; }
+
+.brands .countrys {
+  overflow: hidden; }
+  .brands .countrys li {
+    float: left;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    height: 32px;
+    width: 130px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    margin: 0 10px 10px 0; }
+    .brands .countrys li i {
+      display: inline-block;
+      vertical-align: middle;
+      width: 16px;
+      height: 11px;
+      margin-right: 5px;
+      background: url(../imgs/index/icon_s_flag.png) no-repeat; }
+  .brands .countrys li.active {
+    background: #ff442a;
+    color: #fff;
+    border-color: #ff442a; }
+  .brands .countrys li:nth-child(2) i {
+    background-position: 0 -77px; }
+  .brands .countrys li:nth-child(3) i {
+    background-position: 0 -66px; }
+  .brands .countrys li:nth-child(4) i {
+    background-position: 0 -55px; }
+  .brands .countrys li:nth-child(5) i {
+    background-position: 0 -44px; }
+  .brands .countrys li:nth-child(6) i {
+    background-position: 0 -33px; }
+  .brands .countrys li:nth-child(7) i {
+    background-position: 0 -22px; }
+  .brands .countrys li:nth-child(8) i {
+    background-position: 0 -11px; }
+
+.country_brands {
+  margin-top: 50px;
+  position: relative; }
+  .country_brands ul {
+    position: absolute;
+    width: 100%;
+    display: none; }
+    .country_brands ul li {
+      float: left;
+      margin: 0 10px 10px 0; }
+      .country_brands ul li img {
+        width: 132px;
+        height: 62px; }
+  .country_brands ul:nth-child(1) {
+    display: block; }
+
+.goodsBox {
+  margin-top: 50px; }
+
+.goodsBox .titleNav {
+  width: 1150px;
+  position: relative;
+  height: 36px;
+  line-height: 36px;
+  margin-left: 50px;
+  border-bottom: 2px solid #ff3f38; }
+  .goodsBox .titleNav .titleLogo {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    left: -50px;
+    top: 0;
+    border-radius: 50%;
+    background: #ff442a; }
+    .goodsBox .titleNav .titleLogo i {
+      width: 36px;
+      height: 36px;
+      display: block;
+      margin: 4px;
+      background: url(../imgs/index/icon_index.png) no-repeat -215px -61px; }
+  .goodsBox .titleNav h1 {
+    color: #ff442a;
+    float: left;
+    font-size: 22px; }
+    .goodsBox .titleNav h1 span {
+      color: #999;
+      font-size: 14px;
+      font-weight: normal;
+      padding-left: 5px; }
+  .goodsBox .titleNav p {
+    float: right; }
+    .goodsBox .titleNav p a {
+      color: #666;
+      margin: 0 10px; }
+      .goodsBox .titleNav p a:hover {
+        color: #ff442a; }
+
+.goodsBox .content {
+  height: 200px; }

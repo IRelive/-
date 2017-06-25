@@ -47,10 +47,102 @@
 			"轿车": ["宾利飞驰"]
 		}
 	},
-	"bannerSrc":[
+	"bannerSrc": [
 		"http://img04.aomygod.com/15cca4e77d2_bc_997325ea7a62b4fed849b00b2bf9fbba_1920x460.jpeg",
 		"http://img04.aomygod.com/15cca4e5fdc_bc_f653df004c22cc080cd80169cdd0cf96_1920x460.jpeg",
 		"http://img04.aomygod.com/15cc84a9a8c_bc_594d8cec215bcf47e26413fbfe08cbab_1920x460.jpeg",
 		"http://img04.aomygod.com/15cc98c1914_bc_eb594f01983faf8f37cf691e62569571_1920x460.jpeg"
+	],
+	"hotBuyProduct": {
+		"products": [{
+			"productImg": "http://img04.aomygod.com/15b571ff482_2_25c35ceef0a587d599971ce09a63f05a_800x800.jpeg!m2",
+			"countryImg": "http://img04.aomygod.com/1548f5518a7_65_9ab36c2c49db08bcd0a97d84d6a3b45a_42x42.png",
+			"country": "美国品牌",
+			"title": "【人气推荐】Ray-Ban 雷朋 太阳镜 金边绿片 RB3025-L0205 防紫外线 58码可选",
+			"detail": "【人气推荐】永恒的经典作为当前具有标志性的太阳镜款式之一，雷朋Aviator Classic太阳镜最初是在1937年为美国空军飞行员设计。Aviator Classic太阳镜是历久弥新的款式，将帅气的飞行员风格与品质、性能和舒适度相结合。Aviator Classic RB3025太阳镜搭配经典金属镜架，并有多种镜片颜色可供选择，此外，该系列太阳镜为佩戴者提供清晰视觉度和强紫外线防护",
+			"sale": 207,
+			"curPrice": 558.00,
+			"oriPrice": 1200.00
+		}, {
+			"productImg": "http://img04.aomygod.com/15aa19280f6_2_2ae71767d8274b6a594e632a9c285d30_800x800.jpeg!m2",
+			"countryImg": "http://img04.aomygod.com/1548f611608_65_1e4379c91c83520d03cbbe8406923303_42x42.png",
+			"country": "中国香港品牌",
+			"title": "香港现货夏季新款 minnerita 女装 休闲圆领短袖T恤AS32004",
+			"detail": "【人气推荐】MinneRita香港现货女恤迷尔瑞卡(minnerita)，很好的修饰锁骨线条,精致原切口边设计简约时尚,穿着更舒适,经典清爽,体现优雅与气质。    ",
+			"sale": 75,
+			"curPrice": 54.00,
+			"oriPrice": 358.00
+		}, {
+			"productImg": "http://img04.aomygod.com/15b571ff482_2_25c35ceef0a587d599971ce09a63f05a_800x800.jpeg!m2",
+			"countryImg": "http://img04.aomygod.com/1548f5518a7_65_9ab36c2c49db08bcd0a97d84d6a3b45a_42x42.png",
+			"country": "美国品牌",
+			"title": "【人气推荐】Ray-Ban 雷朋 太阳镜 金边绿片 RB3025-L0205 防紫外线 58码可选",
+			"detail": "【人气推荐】永恒的经典作为当前具有标志性的太阳镜款式之一，雷朋Aviator Classic太阳镜最初是在1937年为美国空军飞行员设计。Aviator Classic太阳镜是历久弥新的款式，将帅气的飞行员风格与品质、性能和舒适度相结合。Aviator Classic RB3025太阳镜搭配经典金属镜架，并有多种镜片颜色可供选择，此外，该系列太阳镜为佩戴者提供清晰视觉度和强紫外线防护",
+			"sale": 207,
+			"curPrice": 558.00,
+			"oriPrice": 1200.00
+		}, {
+			"productImg": "http://img04.aomygod.com/15aa19280f6_2_2ae71767d8274b6a594e632a9c285d30_800x800.jpeg!m2",
+			"countryImg": "http://img04.aomygod.com/1548f611608_65_1e4379c91c83520d03cbbe8406923303_42x42.png",
+			"country": "中国香港品牌",
+			"title": "香港现货夏季新款 minnerita 女装 休闲圆领短袖T恤AS32004",
+			"detail": "【人气推荐】MinneRita香港现货女恤迷尔瑞卡(minnerita)，很好的修饰锁骨线条,精致原切口边设计简约时尚,穿着更舒适,经典清爽,体现优雅与气质。    ",
+			"sale": 75,
+			"curPrice": 54.00,
+			"oriPrice": 358.00
+		}, {
+			"productImg": "http://img04.aomygod.com/15b571ff482_2_25c35ceef0a587d599971ce09a63f05a_800x800.jpeg!m2",
+			"countryImg": "http://img04.aomygod.com/1548f5518a7_65_9ab36c2c49db08bcd0a97d84d6a3b45a_42x42.png",
+			"country": "美国品牌",
+			"title": "【人气推荐】Ray-Ban 雷朋 太阳镜 金边绿片 RB3025-L0205 防紫外线 58码可选",
+			"detail": "【人气推荐】永恒的经典作为当前具有标志性的太阳镜款式之一，雷朋Aviator Classic太阳镜最初是在1937年为美国空军飞行员设计。Aviator Classic太阳镜是历久弥新的款式，将帅气的飞行员风格与品质、性能和舒适度相结合。Aviator Classic RB3025太阳镜搭配经典金属镜架，并有多种镜片颜色可供选择，此外，该系列太阳镜为佩戴者提供清晰视觉度和强紫外线防护",
+			"sale": 207,
+			"curPrice": 558.00,
+			"oriPrice": 1200.00
+		}, {
+			"productImg": "http://img04.aomygod.com/15aa19280f6_2_2ae71767d8274b6a594e632a9c285d30_800x800.jpeg!m2",
+			"countryImg": "http://img04.aomygod.com/1548f611608_65_1e4379c91c83520d03cbbe8406923303_42x42.png",
+			"country": "中国香港品牌",
+			"title": "香港现货夏季新款 minnerita 女装 休闲圆领短袖T恤AS32004",
+			"detail": "【人气推荐】MinneRita香港现货女恤迷尔瑞卡(minnerita)，很好的修饰锁骨线条,精致原切口边设计简约时尚,穿着更舒适,经典清爽,体现优雅与气质。    ",
+			"sale": 75,
+			"curPrice": 54.00,
+			"oriPrice": 358.00
+		}],
+		"hot_ad": "http://img04.aomygod.com/15c200bcdd0_bc_8047d479dd341e321a2cc2d5ece6decf_990x200.jpeg"
+	},
+	"globalBrands":[
+		["http://img04.aomygod.com/154f6b85173_bc_a132fdce0ce933da140c90050d7584c9_131x62.jpeg",
+			"http://img04.aomygod.com/154f6b85173_bc_a132fdce0ce933da140c90050d7584c9_131x62.jpeg",
+			"http://img04.aomygod.com/154f6b85173_bc_a132fdce0ce933da140c90050d7584c9_131x62.jpeg",
+			"http://img04.aomygod.com/1549dc99e59_bc_8425c63eb410f481adce30abd6b884e7_131x62.jpeg",
+			"http://img04.aomygod.com/154f6b816d9_bc_e547cc4d78dce4853a0322f41787a1e4_132x63.jpeg",
+			"http://img04.aomygod.com/154f6b85173_bc_a132fdce0ce933da140c90050d7584c9_131x62.jpeg",
+			"http://img04.aomygod.com/154f6b85173_bc_a132fdce0ce933da140c90050d7584c9_131x62.jpeg",
+			"http://img04.aomygod.com/154f6b816d9_bc_e547cc4d78dce4853a0322f41787a1e4_132x63.jpeg",
+			"http://img04.aomygod.com/154f6b85173_bc_a132fdce0ce933da140c90050d7584c9_131x62.jpeg",
+			"http://img04.aomygod.com/1549dc99e59_bc_8425c63eb410f481adce30abd6b884e7_131x62.jpeg",
+			"http://img04.aomygod.com/154f6b85173_bc_a132fdce0ce933da140c90050d7584c9_131x62.jpeg",
+			"http://img04.aomygod.com/154f6b816d9_bc_e547cc4d78dce4853a0322f41787a1e4_132x63.jpeg",
+			"http://img04.aomygod.com/1549dc99e59_bc_8425c63eb410f481adce30abd6b884e7_131x62.jpeg",
+			"http://img04.aomygod.com/154f6b85173_bc_a132fdce0ce933da140c90050d7584c9_131x62.jpeg",
+			"http://img04.aomygod.com/1549dc99e59_bc_8425c63eb410f481adce30abd6b884e7_131x62.jpeg",
+			"http://img04.aomygod.com/154f6b816d9_bc_e547cc4d78dce4853a0322f41787a1e4_132x63.jpeg"
+		],
+		["http://img04.aomygod.com/157a70d4782_bc_15dbc433769b931d8ef9e69fa993a888_546x258.png",
+			"http://img04.aomygod.com/157a70d4782_bc_15dbc433769b931d8ef9e69fa993a888_546x258.png",
+			"http://img04.aomygod.com/157a70d4782_bc_15dbc433769b931d8ef9e69fa993a888_546x258.png",
+			"http://img04.aomygod.com/158b463bdd6_bc_82dce2af03fecf908bd551eae3664e9d_131x63.jpeg",
+			"http://img04.aomygod.com/157a70d4782_bc_15dbc433769b931d8ef9e69fa993a888_546x258.png",
+			"http://img04.aomygod.com/158b463bdd6_bc_82dce2af03fecf908bd551eae3664e9d_131x63.jpeg",
+			"http://img04.aomygod.com/158b463bdd6_bc_82dce2af03fecf908bd551eae3664e9d_131x63.jpeg",
+			"http://img04.aomygod.com/157a70d4782_bc_15dbc433769b931d8ef9e69fa993a888_546x258.png",
+			"http://img04.aomygod.com/158b463bdd6_bc_82dce2af03fecf908bd551eae3664e9d_131x63.jpeg"
+		],
+		["http://img04.aomygod.com/158b463bdd6_bc_82dce2af03fecf908bd551eae3664e9d_131x63.jpeg"],
+		["http://img04.aomygod.com/158b463bdd6_bc_82dce2af03fecf908bd551eae3664e9d_131x63.jpeg"],
+		["http://img04.aomygod.com/158b463bdd6_bc_82dce2af03fecf908bd551eae3664e9d_131x63.jpeg"],
+		["http://img04.aomygod.com/158b463bdd6_bc_82dce2af03fecf908bd551eae3664e9d_131x63.jpeg"],
+		["http://img04.aomygod.com/158b463bdd6_bc_82dce2af03fecf908bd551eae3664e9d_131x63.jpeg"]
 	]
 }

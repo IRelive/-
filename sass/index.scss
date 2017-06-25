@@ -72,7 +72,278 @@
 	background: #f5f5f5;
 }
 //HOT必买爆品
-.hotBuy{
+.hot_products{
+	padding: 12px 0;
+	.hot_ad{
+		display: block;
+		img{
+			width: 100%;
+		}
+	}
+}
+.hot_products dl{
+	background: #fff;
+	width: 582px;
+	height: 234px;
+	padding: 6px;
+	float: left;
+	margin-bottom: 12px;
+	&:hover{
+		dt img{
+			transform:scale(1.1);
+		}
+	}
+	&:nth-child(2n+1){
+		margin-right: 12px;
+	}	
 	
+	dt{
+		float: left;
+		overflow: hidden;
+		img{
+			width: 234px;
+			transition:all .5s;
+		}
+	}
+	dd{
+		float: left;
+		width: 306px;
+		padding-left:24px;
+		h2{
+			color: #7c7c7c;
+			height: 26px;
+			line-height: 26px;
+			font-size: 12px;
+			padding: 12px 0 6px;
+			font-weight: normal;
+			img{
+				width: 26px;
+				margin-right:10px;
+				float: left;
+			}
+		}
+		h3{
+			border-bottom:1px dotted #ddd;
+			white-space: nowrap;
+			line-height: 30px;
+			overflow: hidden;
+			text-overflow:ellipsis;
+			a{
+				color: #1a1818;
+				font-weight: normal;
+				&:hover{
+					color: #ff442a;
+				}
+			}
+		}
+		.detail{
+			color: #999;
+			line-height: 18px;
+			height: 75px;
+			margin-top: 5px;
+			overflow: hidden;
+		}
+		.sale{
+			overflow: hidden;
+			color: #fff;
+			margin-bottom:20px;
+			span{
+				float: left;
+				height: 22px;
+				line-height: 22px;
+				background: #ff442a;
+				padding: 0 10px;
+				border-bottom-left-radius: 3px;
+				border-top-left-radius: 3px;
+				b{
+					padding: 0 5px;
+				}
+			}
+			i{
+				float: left;
+				border:11px solid #ff442a;
+				border-color: transparent transparent transparent #ff442a;
+			}
+		}
+		.bottom{
+			height: 40px;
+			i{
+				color: #ff442a;
+				font-size: 16px;
+				font-weight:bold;
+				b{
+					font-size: 22px;
+					font-weight:400;
+				}
+			}
+			em{
+				color: #999;
+				font-size: 13px;
+				line-height: 20px;
+				padding-left:12px;
+				text-decoration: line-through;
+				b{
+					font-weight: normal;
+
+				}
+			}
+			a{
+				float: right;
+				width: 83px;
+				color: #ff442a;
+				height: 25px;
+				line-height: 25px;
+				text-align: center;
+				border:1px solid #ff442a;
+				border-radius:3px;
+				font-size: 14px;
+				&:hover{
+					font-weight:bold;
+				}
+			}
+		}
+	}
+}
+//全球品牌
+.globalBrand .content{
+	.brand_ad{
+		float: left;
+		img{
+			width: 714px;
+			height: 178px;
+			margin-top: 10px;
+			border:1px solid #ddd;
+		}
+	}
+	.brands{
+		float: right;
+		margin-top:10px;
+		background: #fff;
+		padding: 20px 0 0 20px;
+		width: 436px;
+		height: 730px;
+	}
+}
+.brands .countrys{
+	overflow: hidden;
+	li{
+		float: left;
+		border:1px solid #e4e4e4;
+		border-radius: 3px;
+		height: 32px;
+		width: 130px;
+		text-align:center;
+		line-height: 32px;
+		cursor:pointer;
+		margin: 0 10px 10px 0;
+		i{
+			display: inline-block;
+			vertical-align: middle;
+			width: 16px;
+			height: 11px;
+			margin-right: 5px;
+			background: url(../imgs/index/icon_s_flag.png) no-repeat;
+		}
+	}
+	li.active{
+		background: #ff442a;
+		color: #fff;
+		border-color:#ff442a;
+	}
+	li:nth-child(2) i{
+		background-position: 0 -77px;
+	}
+	li:nth-child(3) i{
+		background-position: 0 -66px;
+	}
+	li:nth-child(4) i{
+		background-position: 0 -55px;
+	}
+	li:nth-child(5) i{
+		background-position: 0 -44px;
+	}
+	li:nth-child(6) i{
+		background-position: 0 -33px;
+	}
+	li:nth-child(7) i{
+		background-position: 0 -22px;
+	}
+	li:nth-child(8) i{
+		background-position: 0 -11px;
+	}
+}
+.country_brands{
+	margin-top:50px;
+	position: relative;
+	ul{
+		position: absolute;
+		width: 100%;
+		display: none;
+		li{
+			float: left;
+			margin: 0 10px 10px 0;
+			img{
+				width: 132px;
+				height: 62px;
+			}
+		}
+	}
+	ul:nth-child(1){
+		display: block;
+	}
 }
 
+//分类商品展示
+.goodsBox{
+	margin-top:50px;
+
+}
+.goodsBox .titleNav{
+	width: 1150px;
+	position:relative;
+	height: 36px;
+	line-height: 36px;
+	margin-left: 50px;
+	border-bottom: 2px solid #ff3f38;
+
+	.titleLogo{
+		width: 44px;
+		height: 44px;
+		position: absolute;
+		left:-50px;
+		top: 0;
+		border-radius: 50%;
+		background: #ff442a;
+		i{
+			width: 36px;
+			height: 36px;
+			display: block;
+			margin:4px;
+			background: url(../imgs/index/icon_index.png) no-repeat -215px -61px;
+		}
+	}
+	h1{
+		color: #ff442a;
+		float: left;
+		font-size: 22px;
+		span{
+			color: #999;
+			font-size: 14px;
+			font-weight:normal;
+			padding-left:5px;
+		}
+	}
+	p{
+		float: right;
+		a{
+			color: #666;
+			margin: 0 10px;
+			&:hover{
+				color: #ff442a;
+			}
+		}
+	}
+}
+.goodsBox .content{
+	height: 200px;
+}
