@@ -56,9 +56,16 @@ $(function(){
 		if(flag){//如果为真，表明还有某一项注册信息填写错误，返回继续填写
 			return 0;
 		}
+		//如果获取该注册用户名得到的数据不为空，表示该用户名已经存在，不能注册
+		if($.cookie("user"+$(".userId input").val())){
+			alert("用户名已存在！");
+			return null;
+		}
 		//表明填写信息正确，保存用户数据，跳转页面
 		var userInfo = {"username":$(".userId input").val(),"pwd":$(".pwd input").val()};
 		$.cookie("user"+$(".userId input").val(),JSON.stringify(userInfo),{expires:30,path:'/'});
+		//保存登录状态，直接跳转到首页
+		$.cookie("loginUser",$('.userId input').val(),{path:'/'});
 		location.href = "../index.html";
 	})
 	//密码框失焦事件

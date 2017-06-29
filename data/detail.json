@@ -1,0 +1,44 @@
+{
+	"goodsInfo":[
+		{
+		"id":100002,
+		"imgArr": [
+			"http://img04.aomygod.com/15aa19280f6_2_2ae71767d8274b6a594e632a9c285d30_800x800.jpeg!l3",
+			"http://img04.aomygod.com/15aa1927c20_2_6a155882ffec38b2e65e2799d7383ee8_800x800.jpeg!l3",
+			"http://img04.aomygod.com/15aa1927e1c_2_e813d57b896421b61d4175723437d0f6_800x800.jpeg!l3",
+			"http://img04.aomygod.com/15aa1927f9d_2_0a7b73c650e49e2c2dda2f863409095b_800x800.jpeg!l3",
+			"http://img04.aomygod.com/15aa1928403_2_a38e42fff50b488519e1e8306b11a0fb_800x800.jpeg!l3"
+
+		],
+		"countryImg":"http://img04.aomygod.com/1548f611608_65_1e4379c91c83520d03cbbe8406923303_42x42.png!s1",
+		"country":["HongKong","中国香港"],
+		"color":["白色","蓝色","黄色","西瓜红"],
+		"size":["S(美码)","M(美码)","L(美码)","X(美码)","XL(美码)"],
+		"title":"MinneRita香港现货女恤",
+		"subTitle":"【香港直邮】香港现货夏季新款 minnerita 女装 休闲圆领短袖T恤AS32004",
+		"intro": "迷尔瑞卡(minnerita)，很好的修饰锁骨线条,精致原切口边设计简约时尚,穿 着更舒适,经典清爽,体现优雅与气质。",			
+		
+		"curPrice": "54.00",
+		"oriPrice": "358.00"
+		},
+		{
+		"id":100003,
+		"imgArr":[
+			"http://img04.aomygod.com/15a4b97636c_2_ad2ab30167e57f60f0ff5018a4c6b93d_800x800.jpeg!l3",
+			"http://img04.aomygod.com/15a4b9764d7_2_ad52cbc6dc9ca90e4a7572675027a7c6_800x800.jpeg!l3",
+			"http://img04.aomygod.com/15a4b9765df_2_f500bdf8cb204fdfe3a1374e8a35a929_800x800.jpeg!l3",
+			"http://img04.aomygod.com/15a4b9768c6_2_a51ac5cb888f4ab1d8e7063227fd7421_800x800.jpeg!l3",
+			"http://img04.aomygod.com/15a4b976c0d_2_386b7de049e51c3f0e4c09beb21757d8_800x800.jpeg!l3"
+		],
+		"countryImg":"http://img04.aomygod.com/1548f5518a7_65_9ab36c2c49db08bcd0a97d84d6a3b45a_42x42.png!s1",
+		"country":["USA","美国"],
+		"color":["白色","蓝色","黄色","西瓜红"],
+		"size":["S(美码)","M(美码)","L(美码)","X(美码)","XL(美码)"],
+		"title":"New Balance/NB580男鞋",
+		"subTitle":"【香港直发】New Balance/NB580男鞋 2017春新款复古跑步鞋休闲运动鞋MRT580XE",
+		"intro": "此款New Balance 580 采用有着街头主义感的军绿色打造鞋面，黑色的N字标点缀鞋身，整体设计简洁流畅又不失质感，复古感浓郁。再辅以了厚实的REVlite缓震大底带来轻量、舒适的穿着感。整体设计具有现代时尚感。",			
+		"curPrice": "599.00",
+		"oriPrice": "1200.00"
+		}
+	]
+}

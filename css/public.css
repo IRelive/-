@@ -70,18 +70,11 @@ a {
   margin-left: 10px;
   color: #666; }
 
-.top_bar_left li:nth-child(2) {
-  width: 35px; }
-
-.top_bar_left li:nth-child(3) {
-  width: 65px; }
-
 .top_bar_left li a {
   color: #ff442a; }
 
 .top_bar_left li a:hover {
-  font-weight: bold;
-  font-size: 13px; }
+  font-weight: bold; }
 
 /* top_bar_right */
 .top_bar_right {
@@ -221,6 +214,7 @@ a {
   position: relative; }
   .nav_left h2 {
     width: 220px;
+    cursor: pointer;
     text-align: center;
     line-height: 38px; }
     .nav_left h2 i {
@@ -370,3 +364,253 @@ a {
       color: #3d3d3d; }
       .nav_tips li a:hover {
         color: #ff432e; }
+
+.footer_con {
+  background: #d3d3d3; }
+  .footer_con .service_nav {
+    padding: 30px 0 20px; }
+
+.footer .service_nav_left {
+  float: left;
+  width: 250px; }
+  .footer .service_nav_left dd {
+    margin-top: 15px; }
+    .footer .service_nav_left dd span {
+      float: left;
+      font-size: 14px;
+      color: #666;
+      line-height: 36px; }
+    .footer .service_nav_left dd img {
+      float: left;
+      margin-left: 10px; }
+
+.footer .service_nav_center {
+  float: left; }
+  .footer .service_nav_center ul {
+    float: left;
+    width: 160px; }
+    .footer .service_nav_center ul li {
+      margin-bottom: 8px; }
+      .footer .service_nav_center ul li a {
+        color: #666; }
+        .footer .service_nav_center ul li a:hover {
+          text-decoration: underline; }
+    .footer .service_nav_center ul li:first-child {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #000; }
+
+.footer .service_nav_right {
+  float: left;
+  width: 120px;
+  text-align: center; }
+  .footer .service_nav_right img {
+    margin: 0 auto 5px;
+    width: 100px; }
+
+.footer_bottom {
+  height: 40px;
+  background: #333;
+  text-align: center;
+  line-height: 40px;
+  color: #f1f1f1; }
+
+.right_sidebar {
+  position: fixed;
+  height: 100%;
+  right: -275px;
+  top: 0;
+  z-index: 999;
+  transition: all .3s; }
+
+.sidebar .displayCar {
+  right: 0; }
+
+.sidebar_title {
+  height: 100%;
+  width: 40px;
+  position: relative;
+  float: left;
+  color: #fff;
+  font-size: 14px;
+  background: #1a1a1a;
+  text-align: center; }
+  .sidebar_title .shopCar {
+    position: absolute;
+    padding: 5px 0;
+    width: 100%;
+    top: 50%;
+    cursor: pointer;
+    margin-top: -200px; }
+    .sidebar_title .shopCar .carGoodsCount {
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      margin: 5px auto;
+      line-height: 24px;
+      background: #f03468;
+      color: #fff; }
+    .sidebar_title .shopCar i.iconfont {
+      font-size: 28px; }
+    .sidebar_title .shopCar p:nth-child(2) {
+      width: 14px;
+      font-size: 14px;
+      margin: 5px auto; }
+    .sidebar_title .shopCar:hover {
+      background: #f03468; }
+  .sidebar_title .sidebar_bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 2px; }
+    .sidebar_title .sidebar_bottom li {
+      padding: 5px 0;
+      cursor: pointer;
+      position: relative; }
+      .sidebar_title .sidebar_bottom li i.iconfont {
+        font-size: 28px; }
+      .sidebar_title .sidebar_bottom li:hover {
+        background: #f03468; }
+    .sidebar_title .sidebar_bottom li:nth-child(2) {
+      margin-bottom: 70px; }
+      .sidebar_title .sidebar_bottom li:nth-child(2) .surprise {
+        position: absolute;
+        display: none;
+        left: -155px;
+        top: -60px;
+        box-shadow: 0 0 5px #ddd;
+        background: #fff;
+        border: 1px solid #e2e2e2;
+        text-align: center;
+        padding: 15px 20px; }
+        .sidebar_title .sidebar_bottom li:nth-child(2) .surprise span:nth-child(1) {
+          color: #888; }
+        .sidebar_title .sidebar_bottom li:nth-child(2) .surprise span:nth-child(3) {
+          color: #f03468; }
+        .sidebar_title .sidebar_bottom li:nth-child(2) .surprise img {
+          width: 100px;
+          margin: 6px 0; }
+      .sidebar_title .sidebar_bottom li:nth-child(2) .triangle {
+        position: absolute;
+        display: none;
+        left: -15px;
+        top: 10px; }
+        .sidebar_title .sidebar_bottom li:nth-child(2) .triangle i {
+          position: absolute;
+          z-index: 200;
+          left: 0;
+          top: 0;
+          border: 10px solid #fff;
+          border-color: transparent transparent transparent #fff; }
+        .sidebar_title .sidebar_bottom li:nth-child(2) .triangle b {
+          position: absolute;
+          left: 1px;
+          top: 0;
+          border: 10px solid #fff;
+          border-color: transparent transparent transparent #e2e2e2; }
+    .sidebar_title .sidebar_bottom li:last-child {
+      height: 60px;
+      line-height: 16px;
+      position: absolute;
+      display: none;
+      width: 100%;
+      bottom: 0; }
+      .sidebar_title .sidebar_bottom li:last-child span {
+        display: block;
+        width: 0;
+        margin: 0 auto 6px;
+        border: 6px solid  #fff;
+        border-color: transparent transparent #fff; }
+
+.shoppingCarBox {
+  width: 275px;
+  height: 100%;
+  float: left;
+  position: relative;
+  background: #f2f2f2; }
+  .shoppingCarBox .empty {
+    height: 80px;
+    width: 250px;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 80px;
+    background: #fff;
+    font-size: 16px; }
+  .shoppingCarBox .cartList {
+    padding: 30px 10px;
+    overflow: hidden; }
+    .shoppingCarBox .cartList li {
+      width: 230px;
+      height: 60px;
+      overflow: hidden;
+      padding: 10px;
+      margin: 0 auto 10px;
+      background: #fff; }
+      .shoppingCarBox .cartList li a {
+        float: left;
+        margin-right: 10px; }
+        .shoppingCarBox .cartList li a img {
+          width: 60px;
+          height: 60px; }
+      .shoppingCarBox .cartList li .infos {
+        float: left;
+        width: 160px; }
+        .shoppingCarBox .cartList li .infos .intro {
+          height: 40px;
+          line-height: 20px;
+          overflow: hidden; }
+        .shoppingCarBox .cartList li .infos .priceNum {
+          line-height: 20px;
+          padding-right: 30px;
+          position: relative; }
+          .shoppingCarBox .cartList li .infos .priceNum span {
+            color: #f03468;
+            font-size: 14px; }
+          .shoppingCarBox .cartList li .infos .priceNum em {
+            float: right;
+            width: 20px;
+            color: #fff;
+            background: #ff3259;
+            padding: 0 5px;
+            text-align: center; }
+          .shoppingCarBox .cartList li .infos .priceNum i {
+            position: absolute;
+            right: 5px;
+            top: 0px;
+            cursor: pointer;
+            font-size: 20px;
+            display: none; }
+      .shoppingCarBox .cartList li:hover {
+        background: #fdeaef; }
+        .shoppingCarBox .cartList li:hover .priceNum i {
+          display: block; }
+  .shoppingCarBox .carBoxBottom {
+    position: absolute;
+    background: #fff;
+    width: 255px;
+    bottom: 0;
+    padding: 15px 10px; }
+    .shoppingCarBox .carBoxBottom .carMes {
+      color: #666; }
+      .shoppingCarBox .carBoxBottom .carMes span:first-child b {
+        margin: 0 5px; }
+      .shoppingCarBox .carBoxBottom .carMes span:last-child {
+        float: right; }
+        .shoppingCarBox .carBoxBottom .carMes span:last-child i {
+          color: #f03468; }
+          .shoppingCarBox .carBoxBottom .carMes span:last-child i em {
+            font-size: 16px; }
+    .shoppingCarBox .carBoxBottom a {
+      display: block;
+      height: 40px;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 18px;
+      background: #f03468;
+      line-height: 40px;
+      color: #fff; }
+      .shoppingCarBox .carBoxBottom a:hover {
+        background: #f00659; }
+      .shoppingCarBox .carBoxBottom a.active {
+        pointer-events: none;
+        background: #f5f5f5;
+        color: #777; }

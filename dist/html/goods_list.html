@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>奥买家-商品列表</title>
+	<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../css/pagination.css">
+	<link rel="stylesheet" type="text/css" href="../css/goods_list.css">
+	<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="../js/jquery.pagination.js"></script>	
+	<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+	<!-- <script type="text/javascript" src="../js/jquery.paging.js"></script> -->
+	<script type="text/javascript" src="../js/goods_list.js"></script>
+
+</head>
+<body>
+	<div class="top_bar"></div>
+	<div class="sidebar"></div>
+	<div class="header"></div>
+	<div class="nav"></div>
+	<div class="path layout">
+		<a href="../index.html" title="">首页</a><span>></span>
+		<div class="subpath">
+			<span><a href="javascript:;" title="">服饰箱包</a>
+			<i class="iconfont">&#xe74a;</i></span>			
+			<p class="otherClass"><a href="javascript:;" title="">母婴用品</a><a href="javascript:;" title="">美妆个护</a><a href="javascript:;" title="">家居百货</a><a href="javascript:;" title="">食品保健</a><a href="javascript:;" title="">平行进口汽车</a></p>
+		</div>
+		<span>></span>
+	</div>
+	<div class="main layout clearfix">
+		<div class="main_side">
+			<div class="goodsCategory">
+				<h1>全部商品分类</h1>
+				<ul class="primaryMenu">
+				</ul>
+				<h2 class="more"><a href="javascript:;" title=""><span>查看更多分类</span><i class="iconfont">&#xe74a;</i></a></h2>
+			</div>
+			<div class="hotRank">
+				<p>热卖排行</p>
+				<ul class="hotList">
+				</ul>
+			</div>
+			
+		</div>
+		<div class="main_content">
+			<div class="selectGoodsStyle">
+				<h1><span>商品筛选</span><i>共<b>2338</b>件相关商品</i></h1>
+				<div class="selected">
+					<h3>已经选择</h3>
+					<ul class="selectedStyles">
+						<!-- <li><span>我是</span>打分电视剧<i class="iconfont icon-close"></i>
+						</li> -->
+					</ul>
+				</div>
+				<div class="goodsBrand selectItem">
+					<h3></h3>					
+					<ul class="brands">						
+					</ul>
+					<div class="multiBtn">
+						<span>确定</span><span>取消</span>
+					</div>
+					<p><span><i class="iconfont icon-add"></i>多选</span><a href="javascript:;">更多<i class="iconfont icon-unfold"></i></a></p>
+				</div>
+				<div class="goodsPrice selectItem">
+					<h3></h3>					
+					<ul class="brands">					
+					</ul>
+					<div class="multiBtn">
+						<span>确定</span><span>取消</span>
+					</div>
+					<p><span><i class="iconfont icon-add"></i>多选</span><a href="javascript:;">更多<i class="iconfont icon-unfold"></i></a></p>
+				</div>
+			</div>
+			<div class="displaySet">
+				<ul class="">
+					<li class="order">
+						<span>默认</span> 
+						<span>销量</span>
+						<span>评价</span>
+						<span>新品</span>
+						<span>价格</span>
+					</li>
+					<li>
+						<input type="text" name="" placeholder="￥">-
+						<input type="text" name="" placeholder="￥">
+						<input type="button" name="" value="确定"> 
+						<input type="radio" name="style">全部
+						<input type="radio" name="style">自营
+						<input type="radio" name="style">全球购
+					</li>
+					<li class="pageSet">
+						<input type="checkbox" name="">仅有货商品
+						<div class="pageShow">
+							<span><i class="iconfont icon-yingyongchengxu"></i>24</span>
+							<span><i class="iconfont icon-yingyongchengxu"></i>48</span>
+							<span><i class="iconfont icon-yingyongchengxu"></i>96</span>
+							<p>
+								<i class="iconfont icon-fanhui"></i>
+									1/14
+								<i class="iconfont icon-gengduo"></i>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<ul class="goodsList clearfix">
+
+			</ul>
+			<div class="showPage">
+				<div class="pagination" id="pagination">
+					
+				</div>
+			</div>
+			<div class="searchBox">
+				
+			</div>
+		</div>
+	</div>
+	<div class="lookHistory">
+		
+	</div>
+	<div class="footer"></div>
+</body>
+</html>

@@ -9,7 +9,7 @@
 		position: absolute;
 		width: 20px;
 		height:20px;
-		right: 10px;
+		right: 40px;
 		line-height: 20px;
 		text-align: center;
 		top: 5px;
@@ -17,6 +17,43 @@
 		color: #fff;
 		font-size: 16px;
 		background: rgba(0,0,0,.2);
+	}
+}
+//楼梯层效果
+.stairs{
+	position: fixed;
+	display: none;
+	width: 35px;
+	z-index:666;
+	left: 0;
+	top: 50%;
+	transform:translateY(-70%);
+	li{
+		padding: 10px 0;
+		text-align:center;
+		background: #918888;
+		cursor:pointer;
+		border-bottom: 1px #b1aaaa solid;
+		color: #fff;
+		&:last-child{
+			border-bottom:none;
+		}
+		&.active{
+			position: relative;
+			z-index: 777;
+			background: #d70b1c;
+			margin-top: -1px;
+			border-top: 1px solid #d70b1c;
+			border-bottom-color: #d70b1c;
+		}
+		&:hover{
+			position: relative;
+			z-index: 777;
+			background: #d70b1c;
+			margin-top: -1px;
+			border-top: 1px solid #d70b1c;
+			border-bottom-color: #d70b1c;
+		}
 	}
 }
 // banner轮播图
@@ -70,6 +107,7 @@
 }
 .main{
 	background: #f5f5f5;
+	padding-bottom: 50px;
 }
 //HOT必买爆品
 .hot_products{
@@ -325,6 +363,7 @@
 	h1{
 		color: #ff442a;
 		float: left;
+		height: 36px;
 		font-size: 22px;
 		span{
 			color: #999;
@@ -345,5 +384,173 @@
 	}
 }
 .goodsBox .content{
-	height: 200px;
+	margin-top:15px;
+}
+.goodsBox .content_left{
+	height: 500px;
+	float: left;
+	width: 220px;
+	dt{overflow: hidden;}
+	img{
+		width: 220px;
+		height: 376px;
+		transition:all .5s;
+		&:hover{
+			transform:scale(1.1);
+		}
+	}
+	dd{
+		background: #e7e5e5;
+		height: 104px;
+		padding: 10px 20px;
+		a{
+			color: #666;
+			float: left;
+			width: 90px;
+			height: 26px;
+			line-height: 26px;
+			text-align:center;
+			&:hover{
+				color: #000;
+			}
+		}
+	}
+}
+.goodsBox .content_center{
+	float: left;
+	padding: 20px;
+	width: 540px;
+	background:#fff;
+	li{
+		float: left;
+		box-sizing:border-box;
+		padding: 16px 30px 0;
+		width: 270px;		
+		height: 230px;
+		&:hover .dis_pic{
+			transform:translateX(-10px);
+		}
+		.detail{
+			white-space:nowrap;
+			text-overflow:ellipsis;
+			overflow: hidden;
+			margin: 10px 0;
+			a{
+				color: #7c7c7c;
+				&:hover{
+					color: #ff442a;
+				}
+			}
+		}
+		.price{
+			i{
+				color:#ff442a;
+				font-size:16px;
+				b{
+					font-size: 22px;
+					font-weight: normal;
+				}
+			}
+			em{
+				font-size:13px;
+				color:#7c7c7c;
+				text-decoration:line-through;
+				margin-left:10px;
+				b{
+					font-weight:normal;
+				}
+			}
+		}
+		.dis_pic{
+			position: relative;
+			padding-left:30px;
+			transition:all .6s;
+			img{
+				width: 146px;
+				height: 146px;
+			}
+			span{
+				line-height: 26px;
+				position: absolute;
+				left: -10px;
+				top: 0;
+				color: #7c7c7c;
+				img{
+					width: 26px;
+					height: 26px;
+					float: left;
+					margin-right:5px;
+				}
+			}
+		}
+	}
+	li:nth-child(1){
+		border-bottom: 1px dotted #a3a3a3;
+		border-right: 1px dotted #a3a3a3;
+	}
+	li:nth-child(2){
+		border-bottom: 1px dotted #a3a3a3;
+	}
+	li:nth-child(3){
+		border-right: 1px dotted #a3a3a3;
+	}
+}
+.goodsBox .content_right{
+	float: left;
+	width: 400px;
+	position: relative;
+	i{
+		position:absolute;
+		z-index:3;
+		width: 73px;
+		height: 60px;
+		top: -8px;
+		right: 16px;
+		background: url(../imgs/index/icon_index.png) no-repeat -155px 0;
+	}
+	a{
+		overflow: hidden;
+		display: block;
+	}
+	img{
+		width: 400px;
+		height: 500px;
+		transition:all .5s;
+		&:hover{
+			transform:scale(1.1);
+		}
+	}
+}
+.company_intro{
+	background: #3e3a39;
+	dl{
+		float: left;
+		text-align:center;
+		height: 106px;
+		width: 200px;
+		dt{
+			width: 60px;
+			margin: 10px auto;
+			height: 60px;
+			background: url(../imgs/index/bottom_item.png) no-repeat;
+		}
+		dd{
+			color: #f1f1f1;
+		}
+	}
+	a:nth-child(2) dl dt{
+		background-position: 0 -60px;
+	}
+	a:nth-child(3) dl dt{
+		background-position: 0 -120px;
+	}
+	a:nth-child(4) dl dt{
+		background-position: 0 -180px;
+	}
+	a:nth-child(5) dl dt{
+		background-position: 0 -240px;
+	}
+	a:nth-child(6) dl dt{
+		background-position: 0 -300px;
+	}
 }

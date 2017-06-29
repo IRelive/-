@@ -43,10 +43,13 @@ $(function(){
 		}
 		if(flag){
 			var userInfo = JSON.parse($.cookie("user"+userId));
-			console.log(userInfo);			
+			//console.log(userInfo);			
 			if(userInfo && userInfo.pwd === userPwd){//登录成功
 				$.cookie("loginUser",userId,{path:'/'});
-				location.href="../index.html";
+				//根据网址?后面来源地址返回对应的html
+				var href = window.location.search.substring(1);
+				console.log(href);
+				location.href= href ? href : "../index.html";
 			}else{
 				alert('您输入的账号或者密码不正确');
 			}
