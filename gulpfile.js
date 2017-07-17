@@ -4,10 +4,10 @@ var sass = require("gulp-sass-china");
 //开启服务指令
 gulp.task("server",function(){
 	connect.server({
-		root:"dist",
-		port:8888,
-		livereload:true
-		})
+		root:"dist",//服务器根目录，可以不写，默认为gulp当前目录
+		port:8888,//设置端口，可以不写，默认为8080端口
+		livereload:true//实时刷新网页，可以不用自己点击浏览刷新
+		});
 	})
 //复制html数据指令
 gulp.task("html",function(){
@@ -34,5 +34,5 @@ gulp.task("watch",function(){
 	gulp.watch(["data/**/*","imgs/**/*","js/*.js"],['data']);
 	gulp.watch("sass/*.scss",['sass']);
 	})
-//默认开启监听和服务
+//默认开启监听和服务,即输入gulp时执行该指令
 gulp.task("default",['watch','server']);

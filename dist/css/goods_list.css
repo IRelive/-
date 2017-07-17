@@ -399,3 +399,12 @@ a {
     font-size: 18px;
     height: 40px;
     float: right; }
+
+.u-flyer {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #f03468;
+  position: fixed;
+  z-index: 9999; }

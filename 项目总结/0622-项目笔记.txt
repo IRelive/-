@@ -1,0 +1,31 @@
+1、超链接a种有个target属性当target=“_blank”时。表示开启一个新的窗口显示相应的目标页面
+
+2、写正则表达式时千万别乱敲空格，空格也属于特殊字符，会影响正则表达式。例如a或b（a|b）如果中间加了空格就变成(a | b)这样式错误的，将匹配不到正确的字符串
+
+3、jQuery里获取元素类名用$().attr("class");
+用$().attr("className")获取不到类名的。
+
+4、同一行文字总是底端对其的，所以当一行文字中插入了一个iconfont字体时，而且该字体大小和其它字体大小不一时，就会出现因为底端对其导致其它文字使用line-height不能垂直居中。
+
+5、css中两个在同一行连续input中间有宽5px的间隙，要去除间隙，可用float方法。
+
+6、阻止submit提交刷新网页就是阻止默认事件
+event.preventDefault()    event.returnValue = false;
+
+7、当一个块状元素内放入一个行内元素时，并给块状元素添加行高，那么该块级元素的高度并不等于行高。所以敲代码是要格外注意，要么给块级元素定义固定高度，要么行高加在行内元素上比较好。
+
+8、jQuery种注意document是没有动画效果的，所以当需要页面上下跳动有动画效果时，加载body上即可，$(body).animate()可以，$(document).animate()jQuery是会报错的
+
+9、css中radio，checkbox，还有一些iconfont和文字在同一行时，会出现垂直方向不对齐，解决办法，给这些元素添加属性
+
+vertical-align:middle; margin-top:-2px; margin-bottom:1px;
+即可
+
+10、jQuery在动态加载模块里面有个点击事件时，应该使用事件委托。例如商品列表里某个商品里有个加入购物车的按钮，
+$('ul').on("click","car_btn",function(){
+
+})
+
+11、jquery程序模拟checkbox的勾选状态采用prop()修改input控件状态，修改属性状态值，不要使用字符串，不然没效果，并不是change事件。也不要使用attr（）修改控件状态，attr()每次只能修改初次状态，并不能实时的改变状态。change事件只是监听checkbox的状态改变触发事件函数，并不会改变checkbox的状态。click会改变checkbox的勾选状态从而触发change事件。
+
+

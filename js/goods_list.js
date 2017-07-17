@@ -35,12 +35,19 @@ $(function(){
 	 },function(){
 		console.log("goodslist.json数据加载失败");
 	 });
-	 
+	 //加入购物车动画效果
+	 function addCartAni(){
+	 // 	var offset = $(".right_sidebar .shopCar .iconfont").offset();  //结束的地方的元素
+		// $("").click(function(event){   //是$(".addcar")这个元素点击促发的 开始动画的位置就是这个元素的位置为起点
+		
+		
+	 }
 	//点击加入购物车
 function addCart(res){
 	changeCart(res);
+	var offset = $(".right_sidebar .shopCar .iconfont").offset();  //结束的地方的元素
 	//商品列表加入购物车按钮点击,因为按钮是动态添加的，所以采用事件委托
-	 $('.goodsList').on('click','.addCarBtn',function(){
+	 $('.goodsList').on('click','.addCarBtn',function(event){
 	 	var that = this;
 	 	var goodsArr = [];
 	 	if($.cookie(cartKey)){
@@ -61,8 +68,28 @@ function addCart(res){
 	 		goodsArr.push(info);
 	 	}
 	 	$.cookie(cartKey,JSON.stringify(goodsArr),{expires:cartExpires,path:'/'});
-	 	changeCart(res);
+	 	//加入购物车动画
+		 var img = $(that).parents('dl').find('img').attr('src');//获取该商品的图片
+		var flyer = $('<img class="u-flyer" src="'+img+'">');//创建飞入的图片
+		flyer.fly({
+			start: {//点击加入购物车位置
+				left: event.clientX,
+				top: event.clientY
+			},
+			end: {//购物车终点
+				left: offset.left+10,
+				top: offset.top+10,
+				width: 0,
+				height: 0
+			},
+			onEnd: function(){//动画结束后回调函数
+				changeCart(res);
+				this.destory();
+			}
+		});
+	 	
 	 });
+	 
 	  //右侧边栏购物车删除按钮,动态创建采用事件委托处理
 	 $('.shoppingCarBox .cartList').on('click','.icon-delete_fill',function(){
 	 	//删除购物车cookie数据
@@ -188,36 +215,6 @@ function dopages(res){
 			}
 				
 			}
-	 // var page5 = $(".pages").paging({
-  //               total: 100,
-  //               animation: false,
-  //               centerBgColor: "#fff",
-  //               centerFontColor: "#000",
-  //               centerBorder: "1px solid #ddd",
-  //               transition: "all .2s",
-  //               centerHoverBgColor: "#25dd3d",
-  //               centerHoverBorder: "1px solid #25dd3d",
-  //               centerFontHoverColor: "#fff",
-  //               otherFontHoverColor: "#fff",
-  //               otherBorder: "1px solid #ddd",
-  //               otherHoverBorder: "1px solid #25dd3d",
-  //               otherBgColor: "#fff",
-  //               otherHoverBgColor: "#25dd3d",
-  //               currentFontColor: "#fff",
-  //               currentBgColor: "#f79898",
-  //               currentBorder: "1px solid #f79898",
-  //               fontSize: 13,
-  //               currentFontSize: 13,
-  //               cormer: 2,
-  //               gapWidth: 3,
-  //               showJump: true,
-  //               jumpBgColor: "#fff",
-  //               jumpFontHoverColor: "#fff",
-  //               jumpHoverBgColor: "#25dd3d",
-  //               jumpBorder: "1px solid #ddd",
-  //               jumpHoverBorder: "1px solid #25dd3d",
-  //               simpleType: 1
-  //           });
 }
 //处理获取的数据
 function handlerIndexJson(){
@@ -231,33 +228,7 @@ function handlerIndexJson(){
 		console.log("index.json数据加载失败");
 	});
 }
-// //加载商品列表
-// function loadGoodsList(res){
-// 	$.each(res,function(i,val){
-// 		$('.goodsList').append(`<li>
-// 					<dl>
-// 						<dt><a href="detail.html?${val.id}" title=""><img src="${val.productImg}" alt=""></a></dt>
-// 						<dd>
-// 							<p class="detail"><a href="detail.html?${val.id}" title="">${val.intro}</a></p>
-// 							<p class="price"><i>￥<b>${val.curPrice}</b></i><em>￥<b>${val.oriPrice}</b></em></p>
-// 							<p class="reviews">
-// 								<i class="iconfont icon-favoritesfilling"></i>
-// 								<i class="iconfont icon-favoritesfilling"></i>
-// 								<i class="iconfont icon-favoritesfilling"></i>
-// 								<i class="iconfont icon-favoritesfilling"></i>
-// 								<i class="iconfont icon-favoritesfilling"></i>
-// 								<span>已有 <b>${val.reviewsCount}</b> 人评价</span>
-// 							</p>
-// 							<div class="bottom">
-// 								<a href="javascript:;" title="" class="addCarBtn" id="${val.id}">加入购物车</a>
-// 								<a href="javascript:;" title="">奥买家国际精品馆</a>
-// 							</div>
-// 						</dd>
-// 					</dl>				
-					
-// 				</li>`)
-// 	})
-// }
+
 ////加载商品筛选属性
 function loadSelectStyle(res){
 	$.each(res,function(i,val){
